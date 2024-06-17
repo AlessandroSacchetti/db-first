@@ -1,0 +1,23 @@
+# DB_first
+
+## focus dell'esercizio:
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario
+
+
+Nome colonna			Tipo					Attributi					Indici
+
+id						int						AUTO_INCREMENT				primary key	
+codice_VIN				varchar(17)				not null, unique						
+marca					varchar(50)				not null								
+modello					varchar(50)				not null								
+alimentazione			varchar(15)				not null								
+ibrido					tinyint					not null								
+anno_produzione			year					not null								
+colore					varchar(20)				not null								
+targa					varchar(7)				null, unique							
+euro					varchar(1)				not null								
+prezzo					decimal(10,2)			not null								
+disponibile				tinyint					not null								
+liesing					tinyint					not null								
+usato					tinyint					not null								
+note					text					null									
